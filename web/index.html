@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bufete Jurídico Villegas Hernández | Soluciones Legales y Bienes Raíces</title>
+    <meta name="description"
+        content="Expertos en soluciones legales, litigios, amparos y gestión de bienes raíces con un enfoque profesional y resultados efectivos.">
+
+    <!-- Fuentes Google: Playfair Display (Títulos Elegant) & Lato (Cuerpo Moderno) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- Iconos (FontAwesome CDN para prototipo) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navegación -->
+    <header>
+        <div class="logo">VILLEGAS HERNÁNDEZ</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero / Inicio -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Excelencia Legal & <br>Oportunidades Inmobiliarias</h1>
+            <p>Defendiendo tus derechos y construyendo tu patrimonio con integridad y profesionalismo.</p>
+            <a href="#contacto" class="btn-primary">Agendar Consulta</a>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="services">
+        <div class="section-title">
+            <h2>Nuestros Servicios</h2>
+            <p>Soluciones integrales adaptadas a tus necesidades.</p>
+        </div>
+
+        <div class="card-container">
+            <!-- Tarjeta Legal -->
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-balance-scale"></i></div>
+                <h3>Defensa Legal y Amparos</h3>
+                <p>Especialistas en litigios, protección de derechos y asesoría jurídica estratégica para casos
+                    complejos.</p>
+            </div>
+
+            <!-- Tarjeta Bienes Raíces -->
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-home"></i></div>
+                <h3>Bienes Raíces</h3>
+                <p>Compra, venta y gestión de inmuebles. Asesoría legal inmobiliaria para garantizar tu inversión.</p>
+            </div>
+
+            <!-- Tarjeta Cobranza -->
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                <h3>Gestión de Cartera</h3>
+                <p>Recuperación de cartera vencida y negociación de deuda con sistemas automatizados eficientes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros (Equipo) -->
+    <section id="nosotros" class="services" style="background-color: var(--light-bg);">
+        <div class="section-title">
+            <h2>Nuestro Equipo</h2>
+            <p>Unidad y experiencia al servicio de su tranquilidad.</p>
+        </div>
+
+        <div class="card-container" style="justify-content: center;">
+            <!-- Lic. Luis Antonio -->
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-gavel"></i></div>
+                <h3>Lic. Luis Antonio Villegas Espinoza</h3>
+                <p><strong>Doctor en Amparo</strong></p>
+                <p>Experto en defensa constitucional y estrategias legales de alto nivel. Su trayectoria garantiza una
+                    representación jurídica sólida y confiable.</p>
+            </div>
+
+            <!-- Fátima Hernández -->
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-user-shield"></i></div>
+                <h3>Fátima Hernández Cruz</h3>
+                <p><strong>Gerente General y Coordinadora de Proyectos</strong></p>
+                <p>Pieza fundamental en la gestión y atención personalizada del despacho. Asegura que cada caso reciba
+                    el seguimiento y la prioridad que merece.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto y Cuestionario -->
+    <section id="contacto" class="contact">
+        <div class="section-title">
+            <h2>Empieza Ahora</h2>
+            <p>Completa el formulario o contáctanos directamente a nuestros números:<br>
+                <strong>667 604 2460</strong> / <strong>667 421 5099</strong>
+            </p>
+        </div>
+
+        <div class="form-container">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nombre Completo</label>
+                    <input type="text" id="name" name="name" class="form-control" required placeholder="Tu nombre">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Teléfono / WhatsApp</label>
+                    <input type="tel" id="phone" name="phone" class="form-control" required placeholder="55 1234 5678">
+                </div>
+
+                <div class="form-group">
+                    <label for="serviceType">¿En qué podemos ayudarte?</label>
+                    <select id="serviceType" name="serviceType" class="form-control" required>
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="legal">Asesoría Legal / Amparo</option>
+                        <option value="bienes_raices">Interés en Inmueble (Compra/Venta)</option>
+                        <option value="cobranza">Tema de Cobranza / Adeudo</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div id="dynamicFields">
+                    <!-- Campos adicionales se pueden inyectar con JS -->
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Detalles de tu consulta</label>
+                    <textarea id="message" name="message" class="form-control" rows="4"
+                        placeholder="Describe brevemente tu situación..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary" style="width: 100%; border: none;">Enviar Consulta a
+                    WhatsApp</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Bufete Jurídico Villegas Hernández. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
